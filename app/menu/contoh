@@ -1,0 +1,115 @@
+<nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" >
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <!-- Dashboard -->
+               <li class="nav-item">
+            <a href="index.php?page=dashboard" class="nav-link active">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+
+          <!-- Barang -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-box"></i>
+              <p>
+                Barang
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=data_barang" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data barang</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=data_category" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Category Barang</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+          <!-- Expired -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-hourglass-end"></i>
+              <p>
+                Reminder Expired
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="index.php?page=data_input_expired" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data expired</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=data_memasuki_expired" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Barang Memasuki Masa Expired</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=data_expired" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Barang Expired</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- User -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=data_users" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data User</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=user" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>User</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Laporan -->
+          <a href="index.php?page=laporan" class="nav-link text-info">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p>
+                Laporan
+              </p>
+            </a>
+
+          <!-- Logout -->
+          <a href="logout.php" class="nav-link text-red">
+              <i class="nav-icon fas fa-power-off"></i>
+              <p>
+                Logout
+              </p>
+            </a>
+          
+      </nav>

@@ -1,0 +1,235 @@
+  CSS untuk membuat header tabel tetap
+  .table-responsive {
+    position: relative;
+    height: 400px; /* Atur tinggi sesuai kebutuhan */
+    overflow: auto;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #17a2b8; /* Warna latar belakang header */
+    color: #ffffff; /* Warna teks pada header */
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2; /* Menambahkan z-index untuk memastikan header tampil di atas tombol aksi */
+  }
+
+  .table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa; /* Warna latar belakang baris bergantian */
+  }
+
+  .table td,
+  .table th {
+    border: 1px solid #dee2e6; /* Garis tepi kolom */
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Mengatur posisi tombol aksi pada tabel */
+  .table .actions {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .user-profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .user-photo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .user-photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .user-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn-edit-photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .user-photo:hover .btn-edit-photo {
+    opacity: 1;
+  }
+
+  .user-details {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .user-details-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .user-details-item {
+    margin-bottom: 10px;
+  }
+
+  .user-details-label {
+    font-weight: bold;
+    width: 120px;
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+  }
+
+  .user-details-value {
+    font-size: 16px;
+    color: #555;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .user-actions {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .btn-action {
+    margin-right: 10px;
+  }
+
+  .swal2-popup {
+    transform: scale(0.8); /* Ubah faktor skala sesuai kebutuhan */
+  }
+
+  .product-item-hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  .calendar th,
+  .calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .calendar th {
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .calendar td.blank {
+    background-color: #eee;
+  }
+  
+  .calendar td.active {
+    background-color: black;
+    color: white;
+  }
+  
+  .calendar td.today {
+    background-color: #d9edf7;
+  }
+  
+  .calendar td:hover {
+    background-color: pink;
+    cursor: pointer;
+  }
+  
+  .calendar td.blank:hover {
+    background-color: #eee;
+    cursor: default;
+  }
+  
+
+
+  /* Tambahkan gaya untuk menu aktif */
+  .nav-item.active > .nav-link {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /* Tambahkan gaya untuk submenu aktif */
+  .nav-item.menu-open > .nav-link {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+
+  /* Tambahkan gaya untuk link submenu aktif */
+  .nav-item.menu-open .nav-treeview .nav-item.active > .nav-link {
+    background-color: #fff;
+    color: #007bff;
+  }
+
+  /* Tambahkan gaya untuk submenu yang tidak aktif */
+  .nav-item .nav-treeview .nav-item .nav-link {
+    padding-left: 2.5rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Tambahkan gaya hover untuk submenu yang tidak aktif */
+  .nav-item .nav-treeview .nav-item .nav-link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+  }
+
+  /* Tambahkan gaya untuk tanda panah submenu */
+  .nav-item .right {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+
+  /* Tambahkan gaya rotasi untuk tanda panah saat submenu terbuka */
+  .nav-item.menu-open .right {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+  /* Tambahkan gaya hover untuk tanda panah */
+  .nav-item .right:hover {
+    transform: translateY(-50%) rotate(-90deg) scale(1.1);
+  }
+  
+  
+  
+  
+
+
